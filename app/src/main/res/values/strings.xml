@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Activities</string>
+    <string name="app_name">OTUS. Homework #1</string>
+    <string name="second_stack_for_activities">.second_stack_for_activities</string>
 </resources>
