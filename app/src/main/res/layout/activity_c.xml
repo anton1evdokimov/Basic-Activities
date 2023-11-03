@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    tools:context=".ActivityC">
+
+    <Button
+        android:id="@+id/openActivityD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityD"
+        app:layout_constraintBottom_toTopOf="@+id/openActivityA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/openActivityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityA"
+        app:layout_constraintBottom_toTopOf="@+id/closeActivityC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openActivityD"
+        />
+
+    <Button
+        android:id="@+id/closeActivityC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close ActivityC"
+        app:layout_constraintBottom_toTopOf="@+id/closeStack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openActivityA"
+        />
+
+    <Button
+        android:id="@+id/closeStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Stack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeActivityC"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
